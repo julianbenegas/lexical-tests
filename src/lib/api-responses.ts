@@ -2,12 +2,13 @@ import type { NextApiResponse } from 'next'
 
 import { formatError } from './utils'
 
-// Some helpers for usual http responses
+// Some helpers for usual http
 
 export function success(
   res: NextApiResponse,
   json: { [key: string]: unknown } = {}
 ) {
+  // sads
   return res.status(200).json(json)
 }
 
